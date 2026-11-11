@@ -130,3 +130,7 @@ Each annotation file looks like this. Coordinates are integer pixels in the upri
 ```bash
 python test_annotations.py
 ```
+
+## Note
+
+This project was originally developed before the rise of large language models (LLMs) and has since been enhanced and refined using Claude Code.
