@@ -14,7 +14,9 @@
   <a href="#files-in-drive">Files in Drive</a>
 </p>
 
-Annotra is a free, serverless app for annotating images. Your images and annotations live in your own Google Drive, so there's no server to set up, pay for, or keep running.
+Annotra is a free, local image annotation tool for creating bounding-box and polygon labels for computer vision datasets. It stores images and annotations in your own Google Drive, so you can label images without setting up a server or uploading your data to a separate annotation service.
+
+Use Annotra for image labeling tasks such as object detection and segmentation. Create custom labels, annotate images with boxes or polygons, and collaborate through a shared Drive folder.
 
 ![Annotra with a histology image open](docs/app-screenshot.png)
 
