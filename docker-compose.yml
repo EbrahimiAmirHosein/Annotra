@@ -1,0 +1,19 @@
+# Linux:  xhost +local:docker && docker compose run --rm --service-ports app
+# macOS:  see README.md
+services:
+  app:
+    build: .
+    image: annotra:latest
+    stdin_open: true
+    tty: true
+    environment:
+      DISPLAY: ${DISPLAY:-:0}
+    ports:
+      - "127.0.0.1:8765:8765"  # Google sign-in returns here
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - annotator-config:/home/appuser/.annotra
+      - ${IMAGES_DIR:-./images}:/data:ro  # the folder offered by "Upload images"
+
+volumes:
+  annotator-config:
